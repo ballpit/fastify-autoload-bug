@@ -1,0 +1,29 @@
+{
+  "name": "test-fast",
+  "version": "0.0.0",
+  "description": "This project was bootstrapped with Fastify-CLI.",
+  "main": "app.js",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tap \"test/**/*.test.js\"",
+    "start": "fastify start -l info app.js",
+    "dev": "fastify start -w -l info -P app.js"
+  },
+  "keywords": [],
+  "author": "Bret Comnes <bcomnes@gmail.com> (https://bret.io/)",
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/autoload": "5.3.0",
+    "@fastify/sensible": "^5.0.0",
+    "desm": "^1.3.0",
+    "fastify": "^4.0.0",
+    "fastify-cli": "^5.3.0",
+    "fastify-plugin": "^4.0.0"
+  },
+  "devDependencies": {
+    "tap": "^16.1.0"
+  }
+}
